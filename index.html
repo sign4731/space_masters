@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space masters</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,34 +15,78 @@
 
             <div id="menuknap">☰</div>
 
-            <ul>
-                <li>
-                    <div class="logo"></div>
-                </li>
 
-                <li>Alle</li>
-                <li>Galaxetyper</li>
-                <li>Stjerner</li>
-                <li>Kometer</li>
-                <li>Planeter</li>
-                <li>Stjernebilleder</li>
-            </ul>
+
+
+
+
+            <button class="filter valgt" data-kategori="alle">Alle</button>
+            <button class="filter" data-kategori="Galaksetyper">Galaxetyper</button>
+            <button class="filter" data-kategori="Stjerner">Stjerner</button>
+            <button class="filter" data-kategori="Kometer">Kometer</button>
+            <button class="filter" data-kategori="Planeter">Planeter</button>
+            <button class="filter" data-kategori="Stjernebilleder">Stjernebilleder</button>
+
+            <div class="logo"></div>
+
 
         </nav>
 
 
     </header>
 
+    <section id="popup">
+
+        <article>
+            <h1 class="popup_navn"></h1>
+            <h2 class="popup_kategori"></h2>
+            <section>
+                <div>
+                    <img class="popup_img" src="" alt="">
+                </div>
+
+
+                <div>
+                    <p class="popup_beskrivelse"></p>
+                </div>
+                <div id="luk"></div>
+
+            </section>
+        </article>
+    </section>
+
     <section id="splash">
         <img src="assets/splash.png" alt="splashbillede">
     </section>
 
-    <section id="listeview"></section>
+
+
+
+
+    <section id="listeview">
+
+    </section>
+
+
+
+    <template>
+
+        <article>
+            <div class="element_container">
+                <img src="" alt="">
+                <button id="info">
+                    <h1 class="navn"></h1>
+                </button>
+            </div>
+        </article>
+
+    </template>
+
+
+
 
     <footer></footer>
 
-    <script src=""></script>
+    <script src="script.js"></script>
 
-</body>
-
-</html>
+</body></html>
