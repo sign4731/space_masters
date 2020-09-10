@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+/*********************MENUBAR****************/
+
+nav {
+    background-color: black;
+}
+
+#menuknap {
+    color: white;
+}
+
+
+
+/********************LISTEVIEW*************/
+
+.element_container {
+    position: relative;
+    width: 100%;
+
+}
+
+#info {
+    position: absolute;
+    left: 45%;
+    top: 45%
+}
+
+/*******************Popup******************/
+
+#popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+
+#popup article {
+    width: 100vw;
+    height: 45vh;
+    background-color: white;
+    border-radius: 100%;
+    margin-top: 100px;
+
+}
+
+#luk {
+    position: absolute;
+    background-image: url(assets/tilbage.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    left: 42.5vw;
+    top: 47vh;
+    display: none;
+}
+
+.popup_navn {
+    text-align: center;
+    font-size: 2rem;
+}
