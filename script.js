@@ -29,6 +29,8 @@ function visElementer() {
 
 }
 
+document.querySelector("#luk").addEventListener("click", () => popup.style.display = "none");
+
 
 function visDetaljer(element) {
     console.log(element);

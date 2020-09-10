@@ -1,10 +1,13 @@
 body {
     margin: 0;
+
 }
+
 
 img {
     width: 100%;
 }
+
 
 
 
@@ -18,26 +21,52 @@ nav {
     color: white;
 }
 
+.logo {
+    background-image: url(assets/Logo_white_text.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
 
 
 /********************LISTEVIEW*************/
+main {
+    background-image: linear-gradient(#1A066E 40%, #0227F5, #D4D2E0);
+}
+
+#listeview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-gap: 50px;
+}
 
 .element_container {
     position: relative;
-    width: 100%;
-
+    background-color: black;
+    border-radius: 100%;
 }
+
+.element_container img {
+    object-fit: cover;
+}
+
 
 #info {
     position: absolute;
     left: 45%;
-    top: 45%
+    top: 45%;
+    opacity: 76%;
+    background-color: white;
+    font-family: 'Audiowide', cursive;
+    border-radius: 15px;
+    border: none;
 }
 
 /*******************Popup******************/
 
 #popup {
     position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100vw;
@@ -63,10 +92,43 @@ nav {
     height: 50px;
     left: 42.5vw;
     top: 47vh;
-    display: none;
 }
 
 .popup_navn {
+    position: relative;
+    top: 20px;
     text-align: center;
     font-size: 2rem;
+    font-family: 'Audiowide', cursive;
+    margin: 0;
+}
+
+.popup_kategori {
+    position: relative;
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    font-weight: 700;
+    font-size: .9rem;
+    margin: 0;
+    top: 20px;
+
+}
+
+.popup_img {
+    max-width: 40vw;
+    position: relative;
+    top: 50px;
+}
+
+.popup_beskrivelse {
+    position: relative;
+    width: 50vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    top: 30px;
+
+}
+
+#popup section {
+    display: flex;
 }
