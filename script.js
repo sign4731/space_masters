@@ -17,7 +17,25 @@ async function loadJSON() {
 
     //gå til vis elementer
     visElementer();
+
+    //menuknap
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
 }
+
+function toggleMenu() {
+    document.querySelector("#menu").classList.toggle("hidden");
+
+    let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+    if (erSkjult == true) {
+        document.querySelector("#menuknap").textContent = "☰";
+    } else {
+        document.querySelector("#menuknap").textContent = "x";
+    }
+
+}
+
 
 function visElementer() {
     //deklaration af constanter så vi kan kopiere indhold fra template til section#listeview
