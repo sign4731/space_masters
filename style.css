@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-image: linear-gradient(#1A066E 40%, #0227F5, #D4D2E0);
 
 }
 
@@ -28,11 +29,26 @@ nav {
     height: 40px;
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateX(-200%);
+    padding: 0;
+    color: black;
+}
 
 /********************LISTEVIEW*************/
+
 main {
-    background-image: linear-gradient(#1A066E 40%, #0227F5, #D4D2E0);
+    margin: 0 20px;
 }
+
+#overskrift {
+    font-family: 'Audiowide', cursive;
+    font-size: 3rem;
+    text-align-last: center;
+    color: white;
+}
+
 
 #listeview {
     display: grid;
@@ -53,13 +69,19 @@ main {
 
 #info {
     position: absolute;
-    left: 45%;
-    top: 45%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     opacity: 76%;
     background-color: white;
     font-family: 'Audiowide', cursive;
     border-radius: 15px;
     border: none;
+}
+
+.navn {
+    font-size: 1.8rem;
 }
 
 /*******************Popup******************/
@@ -131,4 +153,10 @@ main {
 
 #popup section {
     display: flex;
+}
+
+/*************FOOTER*************/
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
 }
