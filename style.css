@@ -61,7 +61,6 @@ nav {
     background-color: black;
     align-items: center;
     margin-top: 50px;
-    margin-left: 50px;
 }
 
 .filter {
@@ -94,6 +93,7 @@ li {
         width: 90vw;
         display: flex;
         justify-content: space-evenly;
+        margin-left: 50px;
     }
 
     #menu li {
