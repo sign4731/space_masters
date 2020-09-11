@@ -23,6 +23,7 @@ async function loadJSON() {
 
 }
 
+
 function toggleMenu() {
     document.querySelector("#menu").classList.toggle("hidden");
 

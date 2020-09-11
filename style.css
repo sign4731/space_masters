@@ -9,7 +9,9 @@ img {
     width: 100%;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 
 /*********************MENUBAR****************/
@@ -18,9 +20,9 @@ nav {
     background-color: black;
     display: flex;
     z-index: 1;
-    position: absolute;
+    position: fixed;
     width: 100vw;
-    /*    height: 60px;*/
+    margin-top: -55px;
 }
 
 #menuknap {
@@ -72,6 +74,7 @@ nav {
 li {
     text-align: center;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 @media(min-width: 600px) {
@@ -84,9 +87,33 @@ li {
         opacity: 1;
     }
 
-    #menu li {
-        display: inline-block;
+    #menu {
+        margin: 0;
+        padding-bottom: 14px;
+        width: 90vw;
+        display: flex;
+        justify-content: space-evenly;
     }
+
+    #menu li {
+        /*
+        display: flex;
+        justify-content: space-evenly;
+*/
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+    }
+
+    .logo {
+        right: 4%;
+        top: 15%;
+    }
+
+    nav {
+        height: 55px;
+    }
+
+
 }
 
 /**************SPLASH******************/
@@ -98,8 +125,89 @@ li {
     background-image: url(assets/splash.png);
     background-size: cover;
     background-position: 50% 100%;
-    /*    margin-top: 60px;*/
+    position: relative;
+    margin-top: 55px;
+
 }
+
+.link {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#pil {
+    width: 150px;
+    cursor: pointer;
+    margin-top: 470px;
+
+}
+
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.80);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.80);
+    }
+}
+
+#stjerneskud1_sprite {
+    width: 6vw;
+    height: 3.75vw;
+    background-image: url(assets/stjerneskud.svg);
+    background-size: cover;
+    transform: rotate(140deg);
+}
+
+#stjerneskud1_container {
+    position: absolute;
+    top: -60px;
+    left: 400px;
+}
+
+.flyv1 {
+    animation: flyv1_kf 2s linear infinite;
+    /*
+    animation-name: flyv1_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 5s linear;
+*/
+
+
+
+}
+
+@keyframes flyv1_kf {
+    0% {
+        top: -60px;
+        left: 600px;
+    }
+
+    100% {
+        top: 600px;
+        left: -150px;
+
+    }
+}
+
 
 /********************LISTEVIEW*************/
 
@@ -112,6 +220,8 @@ main {
     font-size: 3rem;
     text-align-last: center;
     color: white;
+    padding: 55px;
+
 }
 
 
