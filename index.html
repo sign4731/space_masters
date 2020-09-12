@@ -17,16 +17,16 @@
 
             <div id="menuknap">☰</div>
 
-            <div class="logo"></div>
+            <a class="logo" href="#top"></a>
 
             <ul id="menu" class="hidden">
 
-                <li><button class="filter valgt" data-kategori="alle">Alle</button></li>
-                <li><button class="filter" data-kategori="Galaksetyper">Galaxetyper</button></li>
-                <li><button class="filter" data-kategori="Stjerner">Stjerner</button></li>
-                <li><button class="filter" data-kategori="Kometer">Kometer</button></li>
-                <li><button class="filter" data-kategori="Planeter">Planeter</button></li>
-                <li><button class="filter" data-kategori="Stjernebilleder">Stjernebilleder</button></li>
+                <li><a href="#overskrift"><button class="filter valgt" data-kategori="alle">Alle</button></a></li>
+                <li><a href="#overskrift"><button class="filter" data-kategori="Galaksetyper">Galaxetyper</button></a></li>
+                <li><a href="#overskrift"><button class="filter" data-kategori="Stjerner">Stjerner</button></a></li>
+                <li><a href="#overskrift"><button class="filter" data-kategori="Kometer">Kometer</button></a></li>
+                <li><a href="#overskrift"><button class="filter" data-kategori="Planeter">Planeter</button></a></li>
+                <li><a href="#overskrift"><button class="filter" data-kategori="Stjernebilleder">Stjernebilleder</button></a></li>
             </ul>
 
 
@@ -58,10 +58,10 @@
 
     <section id="splash">
         <div id="splash_elementer">
-            <div id="stjerneskud1_container" class="flyv1">
+            <div id="stjerneskud1_container" class="">
                 <div id="stjerneskud1_sprite"></div>
             </div>
-            <div id="stjerneskud2_container">
+            <div id="stjerneskud2_container" class="">
                 <div id="stjerneskud2_sprite"></div>
             </div>
             <div id="raket_container">
@@ -105,7 +105,15 @@
 
 
     <footer>
-        <p>Credits til alle mulige</p>
+        <div>
+            <p>Credits til alle mulige</p>
+        </div>
+
+        <div class="footer_logo"></div>
+
+        <div>
+            <p>Lavet af?</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

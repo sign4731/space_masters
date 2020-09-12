@@ -21,9 +21,64 @@ async function loadJSON() {
     //menuknap
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
+    //gå til startStjerneskud1
+    startStjerneskud1()
+
+
+
+}
+
+function startStjerneskud1() {
+    console.log("startStjerneskud1");
+    //begynd animation på stjerneskud 1
+    document.querySelector("#stjerneskud1_container").classList.add("flyv1");
+
+    //animation stjerneskud 1 done
+    document.querySelector("#stjerneskud1_container").addEventListener("animationend", startTid1);
+
+    //fjern igangværende animation
+    //    document.querySelector("#stjerneskud2_container").classList.remove("flyv2");
 }
 
 
+function startStjerneskud2() {
+    console.log("startStjerneskud2");
+
+    //fjern nuværende animation
+    //    this.classList.remove("flyv1");
+
+    //start animation på stjerneskud 2
+    document.querySelector("#stjerneskud2_container").classList.add("flyv2");
+
+    //animation stjerneskud 2 done
+    document.querySelector("#stjerneskud2_container").addEventListener("animationend", startTid2);
+}
+
+function startTid1() {
+    console.log("startTid1");
+    //fjern class fra stjerne 1
+    document.querySelector("#stjerneskud1_container").classList.remove("flyv1");
+
+    //fjerne lytteren på stjerne 1 og start tiden
+    document.querySelector("#stjerneskud1_container").removeEventListener("animationend", startTid1);
+
+    //tid, derefter videre til næste stjerne
+    setTimeout(startStjerneskud2, 1000);
+}
+
+function startTid2() {
+    console.log("startTid2");
+    //fjern class fra stjerne 2
+    document.querySelector("#stjerneskud2_container").classList.remove("flyv2");
+
+    //fjerne lytteren på stjerne 2 og start tiden
+    this.removeEventListener("animationend", startTid2);
+
+    //tid, derefter videre til næste stjerne
+    setTimeout(startStjerneskud1, 1000);
+}
+
+//basic burgermenu
 function toggleMenu() {
     document.querySelector("#menu").classList.toggle("hidden");
 
@@ -73,6 +128,7 @@ function visDetaljer(element) {
     popup.querySelector(".popup_img").src = "assets/" + element.gsx$billede.$t + ".png";
     popup.querySelector(".popup_beskrivelse").textContent = element.gsx$beskrivelse.$t;
 
+    //vider vinduet - fremfor display:none
     popup.style.display = "block";
 
 }
