@@ -349,7 +349,7 @@ main {
     text-align: center;
     font-family: 'Audiowide', cursive;
     font-weight: 700;
-    font-size: .9rem;
+    font-size: .8rem;
     margin: 0;
     top: 20px;
 
@@ -372,6 +372,51 @@ main {
 
 #popup section {
     display: flex;
+}
+
+@media (min-width: 600px) {
+    #popup article {
+        width: 700px;
+        height: 700px;
+        margin: 20px auto;
+
+
+    }
+
+    .popup_navn {
+        font-size: 2.5rem;
+        top: 70px;
+    }
+
+    .popup_kategori {
+        top: 70px;
+        font-size: 1rem;
+    }
+
+    .popup_beskrivelse {
+        width: 300px;
+        font-size: 1rem;
+    }
+
+    .popup_img {
+        width: 300px;
+        padding: 10px;
+    }
+
+    #popup section {
+        align-items: center;
+        justify-content: center;
+        margin: 85px;
+    }
+
+    #luk {
+        width: 100px;
+        height: 100px;
+        left: 47vw;
+        top: 77vh;
+
+
+    }
 }
 
 /*************FOOTER*************/
