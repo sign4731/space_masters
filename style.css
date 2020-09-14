@@ -359,13 +359,14 @@ main {
     max-width: 40vw;
     position: relative;
     top: 50px;
+    padding: 10px;
 }
 
 .popup_beskrivelse {
     position: relative;
-    width: 50vw;
+    width: 170px;
     font-family: 'Montserrat', sans-serif;
-    font-size: .8rem;
+    font-size: .6rem;
     top: 30px;
 
 }
