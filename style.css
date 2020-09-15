@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-image: linear-gradient(#000060 40%, #0227F5, #D4D2E0);
+    /*    background-image: linear-gradient(#000060 40%, #0227F5, #D4D2E0);*/
+    background-image: linear-gradient(#000060 20%, #563384, #5841C4, #C6549E, #DEB4E6);
 
 }
 
@@ -35,8 +36,6 @@ nav {
     cursor: pointer;
 
 }
-
-
 
 .logo {
     background-image: url(assets/Logo_no_text.png);
@@ -79,11 +78,13 @@ nav {
 }
 
 .valgt {
-
     color: yellow;
     text-shadow: 0 0 20px rgb(255, 255, 0);
+}
 
-
+.filter:hover {
+    color: purple;
+    text-shadow: 0 0 20px rgb(245, 0, 255);
 }
 
 li {

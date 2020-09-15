@@ -149,4 +149,5 @@ function filterBTNs() {
     })
     this.classList.add("valgt");
     visElementer()
+    toggleMenu()
 }
