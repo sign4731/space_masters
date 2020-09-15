@@ -74,6 +74,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .valgt {
@@ -136,7 +137,7 @@ li {
     max-width: none;
     background-image: url(assets/splash.png);
     background-size: cover;
-    background-position: 50% 100%;
+    background-position: 49% 100%;
     position: relative;
     margin-top: 55px;
 
@@ -272,9 +273,17 @@ main {
 
 
 #listeview {
+    width: 93vw;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /*
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
     grid-gap: 50px;
+*/
 }
 
 .element_container {
@@ -292,13 +301,13 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 76%;
     background-color: white;
     font-family: 'Audiowide', cursive;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
 }
 
 .navn {
@@ -320,7 +329,7 @@ main {
 
 #popup article {
     width: 100vw;
-    height: 45vh;
+    height: 65vh;
     background-color: white;
     border-radius: 100%;
     margin-top: 100px;
@@ -329,19 +338,20 @@ main {
 
 #luk {
     position: absolute;
-    background-image: url(assets/tilbage.png);
+    background-image: url(assets/tilbage.svg);
     background-size: cover;
-    width: 50px;
-    height: 50px;
-    left: 42.5vw;
-    top: 47vh;
+    width: 100px;
+    height: 80px;
+    left: 39vw;
+    top: 65vh;
+    cursor: pointer;
 }
 
 .popup_navn {
     position: relative;
-    top: 20px;
+    top: 50px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-family: 'Audiowide', cursive;
     margin: 0;
 }
@@ -353,14 +363,14 @@ main {
     font-weight: 700;
     font-size: .8rem;
     margin: 0;
-    top: 20px;
+    top: 50px;
 
 }
 
 .popup_img {
     max-width: 40vw;
     position: relative;
-    top: 50px;
+    top: 80px;
     padding: 10px;
 }
 
@@ -368,8 +378,9 @@ main {
     position: relative;
     width: 170px;
     font-family: 'Montserrat', sans-serif;
-    font-size: .6rem;
-    top: 30px;
+    font-size: .7rem;
+    top: 50px;
+    left: 30px;
 
 }
 
@@ -388,11 +399,11 @@ main {
 
     .popup_navn {
         font-size: 2.5rem;
-        top: 70px;
+        top: 120px;
     }
 
     .popup_kategori {
-        top: 70px;
+        top: 120px;
         font-size: 1rem;
     }
 
@@ -413,9 +424,9 @@ main {
     }
 
     #luk {
-        width: 100px;
-        height: 100px;
-        left: 47vw;
+        width: 141px;
+        height: 80px;
+        left: 45vw;
         top: 77vh;
 
 
