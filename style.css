@@ -9,9 +9,11 @@ img {
     width: 100%;
 }
 
+/*
 html {
     scroll-behavior: smooth;
 }
+*/
 
 
 /*********************MENUBAR****************/
@@ -60,11 +62,12 @@ nav {
 
 #menu {
     list-style-type: none;
-    transition: transform .3s;
     transform-origin: top left;
     background-color: black;
-    align-items: center;
     margin-top: 50px;
+    position: relative;
+    left: 12%;
+
 }
 
 .filter {
@@ -78,8 +81,10 @@ nav {
 }
 
 .valgt {
+
     color: yellow;
     text-shadow: 0 0 20px rgb(255, 255, 0);
+
 
 }
 
@@ -89,7 +94,7 @@ li {
     cursor: pointer;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 700px) {
     #menuknap {
         display: none;
     }
@@ -106,6 +111,7 @@ li {
         display: flex;
         justify-content: space-evenly;
         margin-left: 50px;
+        left: 0;
     }
 
     #menu li {
@@ -118,7 +124,7 @@ li {
     }
 
     .logo {
-        right: 4%;
+        right: 0%;
         top: 15%;
     }
 
@@ -126,7 +132,30 @@ li {
         height: 55px;
     }
 
+    .filter {
+        font-size: 0.8rem;
+    }
 
+    #menu {
+        margin-left: 0px;
+    }
+
+
+}
+
+@media(min-width: 1100px) {
+    .filter {
+        font-size: 1.2rem;
+    }
+
+    #menu {
+        margin-left: 0px;
+    }
+
+    .logo {
+        right: 4%;
+        top: 15%;
+    }
 }
 
 /**************SPLASH******************/
@@ -273,23 +302,32 @@ main {
 
 
 #listeview {
-    width: 93vw;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 80px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /*
+    width: 5vw;
+    max-width: 100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
     grid-gap: 50px;
 */
+
 }
 
 .element_container {
     position: relative;
     background-color: black;
     border-radius: 100%;
+    width: 300px;
+    margin: 50px;
+
 }
 
 .element_container img {
@@ -308,10 +346,33 @@ main {
     border-radius: 15px;
     border: none;
     cursor: pointer;
+    max-width: 244px;
 }
 
 .navn {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    #listeview {
+
+
+        width: 93vw;
+        max-width: 1100px;
+        margin: 0 auto;
+
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        /*
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-gap: 50px;
+*/
+
+
+    }
 }
 
 /*******************Popup******************/
@@ -410,11 +471,13 @@ main {
     .popup_beskrivelse {
         width: 300px;
         font-size: 1rem;
+        left: -30px;
+
     }
 
     .popup_img {
         width: 300px;
-        padding: 10px;
+        left: -30px;
     }
 
     #popup section {
@@ -425,7 +488,7 @@ main {
 
     #luk {
         width: 141px;
-        height: 80px;
+        height: 100px;
         left: 45vw;
         top: 77vh;
 
@@ -440,19 +503,34 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
     grid-gap: 50px;
     margin: 40px 20px;
-
-}
-
-footer p {
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+
 }
 
 .footer_logo {
     background-image: url(assets/Logo_black_text.png);
     background-size: cover;
-    height: 155px;
+    height: 172px;
     width: 150px;
     margin: 0 auto;
 
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+#credits {
+    margin-top: 42px;
+    margin-left: 50px;
+}
+
+#copy {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
 }
