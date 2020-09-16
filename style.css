@@ -315,6 +315,11 @@ li {
     }
 }
 
+@media (max-width: 1400px) {
+    #raket_sprite {
+        display: none;
+    }
+}
 
 /********************LISTEVIEW*************/
 
