@@ -5,6 +5,8 @@ let filter = "alle";
 //gå til loadjson functionen når dokumendet er loadet
 document.addEventListener("DOMContentLoaded", loadJSON)
 
+//siden vises, musik starter
+document.querySelector("#lyd").play();
 
 // denne function loader indholdet fra googlesheetet vha json
 async function loadJSON() {
