@@ -25,19 +25,15 @@ async function loadJSON() {
 
     //gå til startStjerneskud1
     startStjerneskud1()
-<<<<<<< HEAD
-=======
 
-
-    //ved click på pil, musik starter
 }
 
 document.querySelector("#pil").addEventListener("click", spilLyd);
 
+//ved click på pil, musik starter
 function spilLyd() {
     console.log(spilLyd);
     document.querySelector("#lyd").play();
->>>>>>> origin/master
 }
 
 function startStjerneskud1() {
