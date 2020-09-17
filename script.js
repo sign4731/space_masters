@@ -110,7 +110,7 @@ function visElementer() {
             klon.querySelector("img").src = "assets/" + element.gsx$billede.$t + ".png";
 
             //åbner popup visning når man trykker på informationsknappen
-            klon.querySelector("#info").addEventListener("click", () => visDetaljer(element));
+            klon.querySelector(".element_container").addEventListener("click", () => visDetaljer(element));
 
             //lægger det klonede ind som child til vores section
             sectionPointer.appendChild(klon);
@@ -130,7 +130,7 @@ function visDetaljer(element) {
     popup.querySelector(".popup_img").src = "assets/" + element.gsx$billede.$t + ".png";
     popup.querySelector(".popup_beskrivelse").textContent = element.gsx$beskrivelse.$t;
 
-    //vider vinduet - fremfor display:none
+    //viser vinduet - fremfor display:none
     popup.style.display = "block";
 
 }

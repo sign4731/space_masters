@@ -176,12 +176,23 @@ li {
 }
 
 #pil {
-    width: 150px;
     cursor: pointer;
     margin-top: 67vh;
-
+    font-family: 'Audiowide', sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    /*        font-weight: 700;*/
+    text-transform: uppercase;
+    text-shadow: 2px 2px yellow;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
 
 .pulse {
     animation-name: pulse_kf;
@@ -344,6 +355,7 @@ main {
     border-radius: 100%;
     width: 300px;
     margin: 50px;
+    border: none;
 }
 
 .element_container img {
