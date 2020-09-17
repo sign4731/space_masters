@@ -5,8 +5,8 @@ let filter = "alle";
 //gå til loadjson functionen når dokumendet er loadet
 document.addEventListener("DOMContentLoaded", loadJSON)
 
-//siden vises, musik starter
-document.querySelector("#lyd").play();
+
+
 
 // denne function loader indholdet fra googlesheetet vha json
 async function loadJSON() {
@@ -27,7 +27,14 @@ async function loadJSON() {
     startStjerneskud1()
 
 
+    //ved click på pil, musik starter
+}
 
+document.querySelector("#pil").addEventListener("click", spilLyd);
+
+function spilLyd() {
+    console.log(spilLyd);
+    document.querySelector("#lyd").play();
 }
 
 function startStjerneskud1() {
