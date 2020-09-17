@@ -23,9 +23,6 @@ async function loadJSON() {
 
     //gå til startStjerneskud1
     startStjerneskud1()
-
-
-
 }
 
 function startStjerneskud1() {
@@ -35,17 +32,11 @@ function startStjerneskud1() {
 
     //animation stjerneskud 1 done
     document.querySelector("#stjerneskud1_container").addEventListener("animationend", startTid1);
-
-    //fjern igangværende animation
-    //    document.querySelector("#stjerneskud2_container").classList.remove("flyv2");
 }
 
 
 function startStjerneskud2() {
     console.log("startStjerneskud2");
-
-    //fjern nuværende animation
-    //    this.classList.remove("flyv1");
 
     //start animation på stjerneskud 2
     document.querySelector("#stjerneskud2_container").classList.add("flyv2");

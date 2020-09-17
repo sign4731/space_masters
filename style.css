@@ -44,7 +44,6 @@ nav {
     height: 50px;
     right: 5%;
     top: 3%;
-    /*    margin: 0 auto;*/
     z-index: 1;
     position: absolute;
     cursor: pointer;
@@ -115,10 +114,6 @@ li {
     }
 
     #menu li {
-        /*
-        display: flex;
-        justify-content: space-evenly;
-*/
         font-family: 'Montserrat', sans-serif;
         cursor: pointer;
     }
@@ -183,7 +178,7 @@ li {
 #pil {
     width: 150px;
     cursor: pointer;
-    margin-top: 470px;
+    margin-top: 67vh;
 
 }
 
@@ -275,20 +270,20 @@ li {
 }
 
 #raket_sprite {
-    width: 6vw;
-    height: 6vw;
+    width: 3vw;
+    height: 3vw;
     background-image: url(assets/rocket.svg);
     background-size: cover;
 }
 
 #raket_container {
     position: absolute;
-    top: 80px;
-    left: 440px;
+    top: 90px;
+    left: 490px;
 }
 
 .raket {
-    transform-origin: 310% 310%;
+    transform-origin: 530% 530%;
     animation-name: raket_kf;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -321,6 +316,7 @@ li {
     }
 }
 
+
 /********************LISTEVIEW*************/
 
 main {
@@ -333,7 +329,6 @@ main {
     text-align-last: center;
     color: white;
     padding: 55px;
-
 }
 
 
@@ -341,20 +336,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*
-    width: 5vw;
-    max-width: 100px;
-    margin: 0 auto;
-
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-    grid-gap: 50px;
-*/
-
 }
 
 .element_container {
@@ -363,7 +344,6 @@ main {
     border-radius: 100%;
     width: 300px;
     margin: 50px;
-
 }
 
 .element_container img {
@@ -391,23 +371,11 @@ main {
 
 @media (min-width: 600px) {
     #listeview {
-
-
-        width: 93vw;
         max-width: 1100px;
         margin: 0 auto;
-
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
-        /*
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-    grid-gap: 50px;
-*/
-
-
     }
 }
 
@@ -434,7 +402,7 @@ main {
 }
 
 #luk {
-    position: absolute;
+    position: fixed;
     background-image: url(assets/tilbage.svg);
     background-size: cover;
     width: 100px;
@@ -526,7 +494,7 @@ main {
         width: 141px;
         height: 100px;
         left: 45vw;
-        top: 77vh;
+        top: 538px;
 
 
     }
